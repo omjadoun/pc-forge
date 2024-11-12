@@ -1,0 +1,142 @@
+.body{ background-color: rgb(26, 26, 23);}
+.main{ 
+      color: aliceblue;
+      align-items: center;
+     }
+/* Reduced width for the boxes */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto; /* Center-aligns the box */
+    width: 400px; /* Set a fixed width for the box */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the label */
+.box label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling for the add button */
+.add-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #c0392b;
+}
+/* Basic styling for the navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: rgb(26, 26, 23);
+}
+
+/* Styling for the left section icons */
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Styling for individual icons */
+.menu-icon, .search-icon, .user-icon, .cart-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Center logo styling */
+.nav-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-center .logo {
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.nav-center p {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+/* Styling for the total section */
+.total-section {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    left: 500px;
+    height: 20px;
+  position: relative;
+}
+
+.total-amount {
+    font-weight: normal;
+}
+
+/* Styling for the button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+     left: 500px;
+    height: 200px;
+  position: relative;
+
+}
+
+/* Styling for each button */
+.action-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+.action-button:hover {
+    background-color: #c0392b;
+     margin: 5px 0; 
+}
+.pi
+{
+text-align: center;
+color: #f1ecec;
+font-size: 30px;
+}
+.des
+{
+    text-align: center; 
+    font-size: 20px;
+}
