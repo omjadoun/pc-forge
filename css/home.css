@@ -1,4 +1,11 @@
-.body{ background-color: rgb(26, 26, 23);}
+body {
+    background-image: url('"D:/program files/OneDrive/Desktop/ball2.jpg"');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+.body{ background-color: rgb(41, 41, 40);}
 .main{ 
       color: aliceblue;
       align-items: center;
@@ -10,7 +17,7 @@
     justify-content: space-between;
     padding: 20px;
     margin: 20px auto; /* Center-aligns the box */
-    width: 400px; /* Set a fixed width for the box */
+    width: 500px; /* Set a fixed width for the box */
     border: 1px solid #ddd;
     border-radius: 25px;
     background-color: #f9f9f9;
@@ -51,12 +58,12 @@
 .nav-left, .nav-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 /* Styling for individual icons */
 .menu-icon, .search-icon, .user-icon, .cart-icon {
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
 }
 
@@ -69,7 +76,7 @@
 }
 
 .nav-center .logo {
-    height: 30px;
+    height: 60px;
     margin-bottom: 5px;
 }
 
