@@ -1,0 +1,301 @@
+body {
+     background-image: url("/img/ball.jpg"); 
+    /* background-color: #333; */
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.main{ 
+      color: rgb(222, 224, 226);
+      align-items: center;
+     }
+/* Reduced width for the boxes */
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px auto; /* Center-aligns the box */
+    width: 500px; /* Set a fixed width for the box */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the label */
+.box label {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling for the add button */
+.add-button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(7, 187, 247, 0.5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: rgba(5, 127, 168, 0.5);
+}
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #161515;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    z-index:1000;
+    top:0;
+}
+
+/* Logo */
+.logo {
+    height: 50px;
+    width:80px ;
+}
+
+/* Browse Button */
+.browse-btn {
+    background-color: #e53935;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+    width: 150%;
+    max-width: 500px;
+    padding: 8px 80px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Right Section Icons */
+.nav-right .nav-item {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Secondary Navigation Links */
+.secondary-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+}
+
+.secondary-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.secondary-nav a:hover {
+    color: #e53935;
+}
+
+/* Styling for the total section */
+.total-section {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f3f0f0;
+    margin-bottom: 10px;
+    left: 500px;
+    height: 20px;
+  position: relative;
+}
+
+.total-amount {
+    font-weight: normal;
+}
+
+/* Styling for the button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+     left: 500px;
+    height: 200px;
+  position: relative;
+
+}
+
+/* Styling for each button */
+.action-button {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+
+
+}
+
+.action-button:hover {
+    background-color: #c0392b;
+     margin: 5px 0; 
+}
+.pi
+{
+text-align: center;
+color: #f1ecec;
+font-size: 30px;
+}
+.des
+{
+    color: #ddd;
+    text-align: center; 
+    font-size: 20px;
+}
+
+ /* Main popup styling */
+ .popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-header h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.close-btn {
+    font-size: 18px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #333;
+}
+
+.popup-search-sort {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.popup-search-sort input[type="text"],
+.popup-search-sort select {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.product-price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-controls button {
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.action-buttons button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.select-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.buy-now-btn {
+    background-color: #28a745;
+    color: #fff;
+}

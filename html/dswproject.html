@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: white;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      border-bottom: 1px solid rgba(0, 245, 212, 0.1);
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container svg {
+      height: 40px;
+      width: auto;
+      transition: all 0.3s ease;
+    }
+
+    .logo-container:hover svg {
+      filter: drop-shadow(0 0 8px rgba(0, 245, 212, 0.5));
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00f5d4;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem;
+      position: relative;
+      overflow: hidden;
+      background-image: url('/img/desktopimage.jpg'); /* Path to the uploaded image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: radial-gradient(circle at center, transparent, rgba(0,0,0,0.8));
+      pointer-events: none;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .hero h2 {
+      font-size: 3.5rem;
+      color: #00f5d4;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background: #00f5d4;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+      background: #00e6c8;
+      transform: translateY(-2px);
+      box-shadow: 0 0 20px rgba(0, 245, 212, 0.3);
+    }
+    button {
+    position: absolute;
+    bottom: -80px; /* Adjust position as needed */
+    right: px; /* Adjust position as needed */
+    margin:10px 20px;
+    color: #fff;
+    z-index: 1;
+    
+    border-radius: 25px;
+    cursor: pointer;
+    height:70px;
+    width:400px;
+    background:transparent;
+    
+    border:2px solid #2a8bb1;
+    font-weight: bolder;
+    font-size: 30px;
+    overflow: hidden;
+
+    
+}
+span{
+  background:#2a8bb1;
+  color:#ffffff;
+  height:100%;
+  position: absolute;
+  width:0%;
+  border-radius: 25px;
+z-index: -1;
+ left:0;
+ bottom:0;
+ transition:0.4s;
+ 
+ 
+}
+button:hover span{
+width:100%;
+}
+ 
+button:hover{
+  border:none;
+  
+}
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 60">
+        <!-- Anvil/PC Base Shape -->
+        <path d="M40 40 L20 40 L15 50 L45 50 L40 40" fill="#00f5d4" />
+        <path d="M25 20 L35 20 L40 40 L20 40 L25 20" fill="#00f5d4" />
+        <!-- Circuit Lines -->
+        <path d="M22 25 H38 M22 30 H38 M22 35 H38" stroke="#002a25" stroke-width="1" />
+        <!-- Hammer -->
+        <path d="M38 15 L42 10 L45 12 L41 17 Z" fill="#00f5d4" />
+        <!-- Text -->
+        <text x="60" y="40" font-family="Arial" font-weight="bold" font-size="32" fill="#00f5d4">PC FORGE</text>
+        <!-- Spark Effects -->
+        <circle cx="43" cy="11" r="1" fill="#fff" />
+        <circle cx="45" cy="9" r="0.5" fill="#fff" />
+        <circle cx="41" cy="13" r="0.7" fill="#fff" />
+      </svg>
+    </a>
+    <div class="nav-links">
+      
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="content">
+      <h1>Build your own P.C</h1>
+      <h2>Super value deals</h2>
+      <!-- <p>Save more with coupons & up to 70% off!</p> -->
+      <!-- <a href="#" class="cta-button">GET STARTED</a> -->
+      <div class="button">
+        <a href="http://localhost/newpro/website/">
+        <button type="button" ><span>
+        </span> GET STARTED</button>
+       </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+ 
